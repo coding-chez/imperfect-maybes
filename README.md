@@ -10,6 +10,10 @@
 
 A minimalist, dark-purple journaling web application built using HTML, CSS, and Vanilla JavaScript.
 
+
+<img width="1901" height="869" alt="Screenshot 2026-10-04 202505" src="https://github.com/user-attachments/assets/971a29fc-dd35-45ba-bcc0-655eec97819c" />
+
+
 ## About
 
 imperfect maybes. is a small digital sanctuary for thoughts that do not necessarily need an ending.
