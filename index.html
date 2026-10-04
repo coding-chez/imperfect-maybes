@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#100d18">
+    <meta name="description" content="A little space for unfinished thoughts, quiet questions, and imperfect maybes.">
+
+    <title>imperfect maybes.</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <a href="#" class="brand">
+                <span class="brand-icon">✳</span>
+                <span>imperfect maybes<span class="brand-period">.</span></span>
+            </a>
+
+            <p class="sidebar-label">YOUR LITTLE SPACE</p>
+
+            <nav class="navigation" aria-label="Thought categories">
+
+                <button class="nav-item active" data-filter="all">
+                    <span>✳</span>
+                    All thoughts
+                    <span class="nav-count" id="allCount">0</span>
+                </button>
+
+                <button class="nav-item" data-filter="thoughts">
+                    <span>☁</span>
+                    Thoughts
+                </button>
+
+                <button class="nav-item" data-filter="maybes">
+                    <span>✧</span>
+                    Maybes
+                </button>
+
+                <button class="nav-item" data-filter="questions">
+                    <span>?</span>
+                    Questions
+                </button>
+
+                <button class="nav-item" data-filter="little-things">
+                    <span>♡</span>
+                    Little things
+                </button>
+
+                <button class="nav-item" data-filter="favorites">
+                    <span>♥</span>
+                    Favorites
+                </button>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="sidebar-note">
+                    <span class="note-star">✦</span>
+                    <p>you don't have to figure everything out today.</p>
+                    <span class="note-small">one thought at a time.</span>
+                </div>
+
+                <p class="sidebar-footer">made with a little uncertainty ♡</p>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow" id="currentDate">A LITTLE SPACE FOR YOU</p>
+                    <h1 id="greeting">hello, thinker.</h1>
+                </div>
+
+                <div class="topbar-decoration" aria-hidden="true">
+                    ✦
+                </div>
+            </header>
+
+
+            <!-- INTRODUCTION -->
+            <section class="welcome-section">
+                <div class="welcome-content">
+                    <span class="welcome-tag">A NOTE TO SELF</span>
+
+                    <h2>
+                        not every thought<br>
+                        needs an <em>ending.</em>
+                    </h2>
+
+                    <p>
+                        some are just passing through.
+                        some are worth keeping.
+                        and some are simply yours.
+                    </p>
+                </div>
+
+                <div class="welcome-orbit" aria-hidden="true">
+                    <span class="orbit-star star-one">✦</span>
+                    <span class="orbit-star star-two">✧</span>
+                    <span class="orbit-center">☾</span>
+                    <span class="orbit-star star-three">✳</span>
+                </div>
+            </section>
+
+
+            <!-- RANDOM PROMPT -->
+            <section class="prompt-card">
+
+                <div class="prompt-icon">✧</div>
+
+                <div class="prompt-content">
+                    <span class="section-eyebrow">A LITTLE PROMPT FOR YOU</span>
+                    <p id="promptText">
+                        what is something you miss but rarely talk about?
+                    </p>
+                </div>
+
+                <button class="refresh-button" id="newPrompt" aria-label="Generate another prompt" title="Another prompt">
+                    ↻
+                </button>
+
+            </section>
+
+
+            <!-- THOUGHT FORM -->
+            <section class="write-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-eyebrow">LET IT OUT</span>
+                        <h2>leave a little something.</h2>
+                    </div>
+
+                    <span class="heading-sparkle">✳</span>
+                </div>
+
+                <form id="thoughtForm">
+
+                    <label for="thoughtInput" class="visually-hidden">
+                        Write your thought
+                    </label>
+
+                    <textarea
+                        id="thoughtInput"
+                        placeholder="a thought, a maybe, a question... anything, really."
+                        maxlength="500"
+                        required
+                    ></textarea>
+
+                    <div class="form-bottom">
+
+                        <div class="form-options">
+
+                            <label for="categorySelect" class="visually-hidden">
+                                Choose a category
+                            </label>
+
+                            <select id="categorySelect">
+                                <option value="thoughts">☁ Thought</option>
+                                <option value="maybes">✧ Maybe</option>
+                                <option value="questions">? Question</option>
+                                <option value="little-things">♡ Little thing</option>
+                            </select>
+
+                            <span class="character-count" id="charCount">0 / 500</span>
+
+                        </div>
+
+                        <button type="submit" class="save-button">
+                            keep this thought <span>↗</span>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- THOUGHT COLLECTION -->
+            <section class="thought-section">
+
+                <div class="thought-heading">
+
+                    <div>
+                        <span class="section-eyebrow">YOUR COLLECTION</span>
+                        <h2 id="collectionTitle">little pieces of you.</h2>
+                    </div>
+
+                    <span class="total-count" id="totalCount">0 saved</span>
+
+                </div>
+
+                <div class="search-wrapper">
+                    <span>⌕</span>
+                    <label for="searchInput" class="visually-hidden">
+                        Search your thoughts
+                    </label>
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="look for a thought..."
+                    >
+                </div>
+
+                <div class="thought-grid" id="thoughtGrid">
+
+                    <!-- JavaScript will insert thought cards here. -->
+
+                </div>
+
+                <div class="empty-state" id="emptyState">
+                    <span class="empty-icon">☾</span>
+                    <h3>nothing here just yet.</h3>
+                    <p>every little collection starts somewhere.</p>
+                </div>
+
+            </section>
+
+
+            <footer class="main-footer">
+                <p>imperfect maybes. © 2026</p>
+                <p>still becoming, still wondering. ♡</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
