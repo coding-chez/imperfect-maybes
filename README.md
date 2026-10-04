@@ -1,5 +1,10 @@
+<div align="center">
+   
+<img width="100" height="100" alt="icon png" src="https://github.com/user-attachments/assets/24f63905-f10b-4f4e-838d-249770f61bbb" />  
 
-# imperfect maybes.
+</div>
+
+# imperfect maybes. 
 
 > a little space for unfinished thoughts, quiet questions, and everything in between.
 
