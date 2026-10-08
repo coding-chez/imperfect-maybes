@@ -4,9 +4,14 @@
 
 </div>
 
-# imperfect maybes. 
+<div align="center">
+   
+# imperfect maybes.
 
-> a little space for unfinished thoughts, quiet questions, and everything in between.
+*a little space for unfinished thoughts, quiet questions, and everything in between.*
+</div>
+
+---
 
 A minimalist, dark-purple journaling web application built using HTML, CSS, and Vanilla JavaScript.
 
