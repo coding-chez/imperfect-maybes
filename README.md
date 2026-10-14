@@ -92,7 +92,7 @@ No account or external database is required.
 
 Chestine May Cabiso
 
-Made with curiosity, and a little uncertainty.
+Made with curiosity, and a little uncertainty ;>
 
 ---
 
