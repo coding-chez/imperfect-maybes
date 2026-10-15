@@ -847,6 +847,8 @@ select:focus-visible {
 }
 
 
+/* 15. REDUCED MOTION */
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
